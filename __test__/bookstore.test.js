@@ -3,6 +3,7 @@ const Book = require('../models/book');
 const request = require("supertest");
 const app = require('../app');
 
+// beforeEach runs before every single test. 
 beforeEach(async () => {
   await Book.create({
     isbn: "121221212",
